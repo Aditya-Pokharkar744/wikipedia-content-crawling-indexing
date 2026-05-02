@@ -139,7 +139,3 @@ Example corpora in the repo may include `Data/data.json` or crawler output under
 
 - Wikipedia HTML structure ties extraction quality to `mw-parser-output` selectors.
 - Large JSON, embedding pickles, and FAISS binaries should stay out of version control; use `.gitignore` and document paths locally.
-
-## License
-
-Specify a license here if you publish the repository publicly.
