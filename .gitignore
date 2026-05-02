@@ -1,0 +1,35 @@
+# Python
+
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+.env.local
+
+# Build / index artifacts (large binaries)
+*.pkl
+*.bin
+indexing/bert_similarity/index/
+indexing/bert_similarity/wiki_embeddings.pkl
+
+# Crawled data (large JSON dumps)
+Data/data.json
+crawling/wikipedia_scraper/wikipedia_scraper/spiders/output_dir/
+crawling/wikipedia_scraper/wikipedia_scraper/spiders/output.json
+indexing/elasticsearch/indexing_runtime.png
+
+# Scrapy
+.scrapy

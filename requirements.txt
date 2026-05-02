@@ -1,0 +1,11 @@
+scrapy==2.5.0
+tqdm
+elasticsearch
+ijson
+flask
+requests
+sentence-transformers
+faiss-cpu
+torch
+numpy
+matplotlib

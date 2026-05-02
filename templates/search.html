@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dual Search Engine</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .result-card {
+            margin-bottom: 1rem;
+            border-left: 4px solid #007bff;
+            transition: transform 0.2s;
+        }
+        .result-card:hover {
+            transform: translateX(5px);
+        }
+        .score-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .loading {
+            display: none;
+        }
+        .preview-content {
+            max-height: 100px;
+            overflow: hidden;
+            position: relative;
+        }
+        .preview-content::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 30px;
+            background: linear-gradient(transparent, white);
+        }
+        .full-content {
+            max-height: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-4">
+        <div class="row mb-4">
+            <div class="col">
+                <h1 class="mb-4">Document Search</h1>
+                
+                <form id="searchForm" class="mb-4">
+                    <div class="mb-3">
+                        <label for="queryInput" class="form-label">Search Query</label>
+                        <input type="text" class="form-control" id="queryInput" 
+                               placeholder="Enter your search query" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label d-block">Search Method</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="searchType" 
+                                   id="elasticSearch" value="elasticsearch" checked>
+                            <label class="form-check-label" for="elasticSearch">Elasticsearch</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="searchType" 
+                                   id="bertSearch" value="bert">
+                            <label class="form-check-label" for="bertSearch">BERT Similarity</label>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="resultsCount" class="form-label">Number of Results</label>
+                        <select class="form-select" id="resultsCount">
+                            <option value="5">5</option>
+                            <option value="10" selected>10</option>
+                            <option value="20">20</option>
+                            <option value="50">50</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">
+                        <span class="spinner-border spinner-border-sm loading" role="status" aria-hidden="true"></span>
+                        Search
+                    </button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col">
+                <div id="searchInfo" class="alert alert-info d-none">
+                    Showing results from <span id="searchMethod"></span>
+                </div>
+                
+                <div id="errorAlert" class="alert alert-danger d-none"></div>
+                
+                <div id="resultsContainer"></div>
+                
+                <div id="noResults" class="alert alert-warning d-none">
+                    No results found for your query.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Handle search form submission
+            document.getElementById('searchForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Show loading state
+                const submitBtn = this.querySelector('button[type="submit"]');
+                submitBtn.disabled = true;
+                document.querySelector('.loading').style.display = 'inline-block';
+                
+                // Clear previous results
+                document.getElementById('resultsContainer').innerHTML = '';
+                document.getElementById('errorAlert').classList.add('d-none');
+                document.getElementById('searchInfo').classList.add('d-none');
+                document.getElementById('noResults').classList.add('d-none');
+                z
+                // Get form data
+                const query = document.getElementById('queryInput').value;
+                const searchType = document.querySelector('input[name="searchType"]:checked').value;
+                const resultsCount = document.getElementById('resultsCount').value;
+                
+                // Create form data
+                const formData = new FormData();
+                formData.append('query', query);
+                formData.append('search_type', searchType);
+                formData.append('k', resultsCount);
+                
+                // Send search request
+                fetch('/search', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    // Re-enable button and hide loading
+                    submitBtn.disabled = false;
+                    document.querySelector('.loading').style.display = 'none';
+                    
+                    // Handle error if any
+                    if (data.error) {
+                        document.getElementById('errorAlert').textContent = data.error;
+                        document.getElementById('errorAlert').classList.remove('d-none');
+                        return;
+                    }
+                    
+                    // Show search method info
+                    document.getElementById('searchMethod').textContent = 
+                        data.search_type === 'elasticsearch' ? 'Elasticsearch' : 'BERT Similarity';
+                    document.getElementById('searchInfo').classList.remove('d-none');
+                    
+                    // Display results or show "no results" message
+                    if (data.results.length === 0) {
+                        document.getElementById('noResults').classList.remove('d-none');
+                    } else {
+                        const resultsContainer = document.getElementById('resultsContainer');
+                        
+                        data.results.forEach(result => {
+                            const resultCard = document.createElement('div');
+                            resultCard.className = 'card result-card p-3 position-relative';
+                            
+                            // Format the score differently based on search type
+                            const scoreFormatted = data.search_type === 'elasticsearch' 
+                                ? result.score.toFixed(2)
+                                : (result.score * 100).toFixed(1) + '%';
+                            
+                            resultCard.innerHTML = `
+                                <span class="badge bg-info score-badge">Score: ${scoreFormatted}</span>
+                                <h5 class="card-title">${result.title}</h5>
+                                <a href="${result.url}" class="text-muted small" target="_blank">${result.url}</a>
+                                <div class="mt-3">
+                                    <div class="preview-content">${result.content}</div>
+                                </div>
+                                <div class="mt-2">
+                                    <button class="btn btn-sm btn-outline-primary toggle-content">Show More</button>
+                                </div>
+                            `;
+                            
+                            resultsContainer.appendChild(resultCard);
+                            
+                            // Add show more functionality
+                            resultCard.querySelector('.toggle-content').addEventListener('click', function() {
+                                const previewContent = resultCard.querySelector('.preview-content');
+                                previewContent.classList.toggle('full-content');
+                                previewContent.classList.toggle('preview-content');
+                                this.textContent = this.textContent === 'Show More' ? 'Show Less' : 'Show More';
+                            });
+                        });
+                    }
+                })
+                .catch(error => {
+                    submitBtn.disabled = false;
+                    document.querySelector('.loading').style.display = 'none';
+                    document.getElementById('errorAlert').textContent = 'Search failed: ' + error.message;
+                    document.getElementById('errorAlert').classList.remove('d-none');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+Feb 13 13:49:10 fedora systemd[1]: Starting elasticsearch.service - Elasticsearch...
+Feb 13 13:49:16 fedora systemd-entrypoint[54808]: CompileCommand: dontinline java/lang/invoke/MethodHandle.setAsTypeCache bool dontinline = true
+Feb 13 13:49:16 fedora systemd-entrypoint[54808]: CompileCommand: dontinline java/lang/invoke/MethodHandle.asTypeUncached bool dontinline = true
+Feb 13 13:49:34 fedora systemd[1]: Started elasticsearch.service - Elasticsearch.
+Feb 13 13:55:18 fedora systemd[1]: Stopping elasticsearch.service - Elasticsearch...
+Feb 13 13:55:19 fedora systemd[1]: elasticsearch.service: Deactivated successfully.
+Feb 13 13:55:19 fedora systemd[1]: Stopped elasticsearch.service - Elasticsearch.
+Feb 13 13:55:19 fedora systemd[1]: elasticsearch.service: Consumed 1min 17.255s CPU time.
+Feb 13 13:55:19 fedora systemd[1]: Starting elasticsearch.service - Elasticsearch...
+Feb 13 13:55:22 fedora systemd-entrypoint[55646]: CompileCommand: dontinline java/lang/invoke/MethodHandle.setAsTypeCache bool dontinline = true
+Feb 13 13:55:22 fedora systemd-entrypoint[55646]: CompileCommand: dontinline java/lang/invoke/MethodHandle.asTypeUncached bool dontinline = true
+Feb 13 13:55:36 fedora systemd-entrypoint[55558]: ERROR: Elasticsearch did not exit normally - check the logs at /var/log/elasticsearch/elasticsearch.log
+Feb 13 13:55:37 fedora systemd-entrypoint[55558]: ERROR: Elasticsearch died while starting up, with exit code 1
+Feb 13 13:55:37 fedora systemd[1]: [0;1;39m[0;1;31m[0;1;39melasticsearch.service: Main process exited, code=exited, status=1/FAILURE[0m
+Feb 13 13:55:37 fedora systemd[1]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185melasticsearch.service: Failed with result 'exit-code'.[0m
+Feb 13 13:55:37 fedora systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start elasticsearch.service - Elasticsearch.[0m
+Feb 13 13:55:37 fedora systemd[1]: elasticsearch.service: Consumed 43.957s CPU time.
+Feb 13 13:59:08 fedora systemd[1]: Starting elasticsearch.service - Elasticsearch...
+Feb 13 13:59:11 fedora systemd-entrypoint[56271]: CompileCommand: dontinline java/lang/invoke/MethodHandle.setAsTypeCache bool dontinline = true
+Feb 13 13:59:11 fedora systemd-entrypoint[56271]: CompileCommand: dontinline java/lang/invoke/MethodHandle.asTypeUncached bool dontinline = true
+Feb 13 13:59:24 fedora systemd-entrypoint[56198]: ERROR: Elasticsearch did not exit normally - check the logs at /var/log/elasticsearch/elasticsearch.log
+Feb 13 13:59:25 fedora systemd-entrypoint[56198]: ERROR: Elasticsearch died while starting up, with exit code 1
+Feb 13 13:59:25 fedora systemd[1]: [0;1;39m[0;1;31m[0;1;39melasticsearch.service: Main process exited, code=exited, status=1/FAILURE[0m
+Feb 13 13:59:25 fedora systemd[1]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185melasticsearch.service: Failed with result 'exit-code'.[0m
+Feb 13 13:59:25 fedora systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start elasticsearch.service - Elasticsearch.[0m
+Feb 13 13:59:25 fedora systemd[1]: elasticsearch.service: Consumed 41.075s CPU time.
+Feb 13 14:03:34 fedora systemd[1]: Starting elasticsearch.service - Elasticsearch...
+Feb 13 14:03:36 fedora systemd-entrypoint[56645]: CompileCommand: dontinline java/lang/invoke/MethodHandle.setAsTypeCache bool dontinline = true
+Feb 13 14:03:36 fedora systemd-entrypoint[56645]: CompileCommand: dontinline java/lang/invoke/MethodHandle.asTypeUncached bool dontinline = true
+Feb 13 14:03:50 fedora systemd[1]: Started elasticsearch.service - Elasticsearch.
+Feb 13 14:16:19 fedora systemd[1]: Stopping elasticsearch.service - Elasticsearch...
+Feb 13 14:16:20 fedora systemd[1]: elasticsearch.service: Deactivated successfully.
+Feb 13 14:16:20 fedora systemd[1]: Stopped elasticsearch.service - Elasticsearch.
+Feb 13 14:16:20 fedora systemd[1]: elasticsearch.service: Consumed 53.479s CPU time, 8.3G memory peak, 0B memory swap peak.
+Feb 13 14:16:20 fedora systemd[1]: Starting elasticsearch.service - Elasticsearch...
+Feb 13 14:16:22 fedora systemd-entrypoint[57357]: CompileCommand: dontinline java/lang/invoke/MethodHandle.setAsTypeCache bool dontinline = true
+Feb 13 14:16:22 fedora systemd-entrypoint[57357]: CompileCommand: dontinline java/lang/invoke/MethodHandle.asTypeUncached bool dontinline = true
+Feb 13 14:16:38 fedora systemd[1]: Started elasticsearch.service - Elasticsearch.
+Feb 13 14:21:43 fedora systemd[1]: Stopping elasticsearch.service - Elasticsearch...
+Feb 13 14:21:44 fedora systemd[1]: elasticsearch.service: Deactivated successfully.
+Feb 13 14:21:44 fedora systemd[1]: Stopped elasticsearch.service - Elasticsearch.
+Feb 13 14:21:44 fedora systemd[1]: elasticsearch.service: Consumed 51.955s CPU time, 8.3G memory peak, 714.8M memory swap peak.
+Feb 13 14:21:44 fedora systemd[1]: Starting elasticsearch.service - Elasticsearch...
+Feb 13 14:21:47 fedora systemd-entrypoint[58635]: CompileCommand: dontinline java/lang/invoke/MethodHandle.setAsTypeCache bool dontinline = true
+Feb 13 14:21:47 fedora systemd-entrypoint[58635]: CompileCommand: dontinline java/lang/invoke/MethodHandle.asTypeUncached bool dontinline = true
+Feb 13 14:22:01 fedora systemd[1]: Started elasticsearch.service - Elasticsearch.
+Feb 13 14:28:14 fedora systemd[1]: Stopping elasticsearch.service - Elasticsearch...
+Feb 13 14:28:15 fedora systemd[1]: elasticsearch.service: Deactivated successfully.
+Feb 13 14:28:15 fedora systemd[1]: Stopped elasticsearch.service - Elasticsearch.
+Feb 13 14:28:15 fedora systemd[1]: elasticsearch.service: Consumed 50.587s CPU time, 8.2G memory peak, 1.1G memory swap peak.
+Feb 13 14:28:15 fedora systemd[1]: Starting elasticsearch.service - Elasticsearch...
+Feb 13 14:28:17 fedora systemd-entrypoint[59964]: CompileCommand: dontinline java/lang/invoke/MethodHandle.setAsTypeCache bool dontinline = true
+Feb 13 14:28:17 fedora systemd-entrypoint[59964]: CompileCommand: dontinline java/lang/invoke/MethodHandle.asTypeUncached bool dontinline = true
+Feb 13 14:28:31 fedora systemd[1]: Started elasticsearch.service - Elasticsearch.
+Feb 13 14:29:47 fedora systemd[1]: Stopping elasticsearch.service - Elasticsearch...
+Feb 13 14:29:48 fedora systemd[1]: elasticsearch.service: Deactivated successfully.
+Feb 13 14:29:48 fedora systemd[1]: Stopped elasticsearch.service - Elasticsearch.
+Feb 13 14:29:48 fedora systemd[1]: elasticsearch.service: Consumed 44.350s CPU time.
+Feb 13 14:29:48 fedora systemd[1]: Starting elasticsearch.service - Elasticsearch...
+Feb 13 14:29:50 fedora systemd-entrypoint[60338]: CompileCommand: dontinline java/lang/invoke/MethodHandle.setAsTypeCache bool dontinline = true
+Feb 13 14:29:50 fedora systemd-entrypoint[60338]: CompileCommand: dontinline java/lang/invoke/MethodHandle.asTypeUncached bool dontinline = true
+Feb 13 14:30:03 fedora systemd[1]: Started elasticsearch.service - Elasticsearch.
+Feb 13 14:32:32 fedora systemd[1]: Stopping elasticsearch.service - Elasticsearch...
+Feb 13 14:32:33 fedora systemd[1]: elasticsearch.service: Deactivated successfully.
+Feb 13 14:32:33 fedora systemd[1]: Stopped elasticsearch.service - Elasticsearch.
+Feb 13 14:32:33 fedora systemd[1]: elasticsearch.service: Consumed 59.108s CPU time.
+Feb 13 14:32:33 fedora systemd[1]: Starting elasticsearch.service - Elasticsearch...
+Feb 13 14:32:36 fedora systemd-entrypoint[60940]: CompileCommand: dontinline java/lang/invoke/MethodHandle.setAsTypeCache bool dontinline = true
+Feb 13 14:32:36 fedora systemd-entrypoint[60940]: CompileCommand: dontinline java/lang/invoke/MethodHandle.asTypeUncached bool dontinline = true
+Feb 13 14:32:48 fedora systemd[1]: Started elasticsearch.service - Elasticsearch.
+Feb 13 20:06:48 fedora systemd[1]: [0;1;39m[0;1;31m[0;1;39melasticsearch.service: A process of this unit has been killed by the OOM killer.[0m
+Feb 13 20:06:49 fedora systemd[1]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185melasticsearch.service: Failed with result 'oom-kill'.[0m
+Feb 13 20:06:49 fedora systemd[1]: elasticsearch.service: Consumed 2min 26.305s CPU time.
+Feb 13 23:56:01 fedora systemd[1]: Starting elasticsearch.service - Elasticsearch...
+Feb 13 23:56:04 fedora systemd-entrypoint[89965]: CompileCommand: dontinline java/lang/invoke/MethodHandle.setAsTypeCache bool dontinline = true
+Feb 13 23:56:04 fedora systemd-entrypoint[89965]: CompileCommand: dontinline java/lang/invoke/MethodHandle.asTypeUncached bool dontinline = true
+Feb 13 23:56:19 fedora systemd[1]: Started elasticsearch.service - Elasticsearch.
+Feb 14 12:29:25 fedora systemd[1]: [0;1;39m[0;1;31m[0;1;39melasticsearch.service: A process of this unit has been killed by the OOM killer.[0m
+Feb 14 12:29:28 fedora systemd[1]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185melasticsearch.service: Failed with result 'oom-kill'.[0m
+Feb 14 12:29:28 fedora systemd[1]: [0;1;39m[0;1;31m[0;1;39melasticsearch.service: Consumed 24min 40.855s CPU time, 8.3G memory peak, 0B memory swap peak.[0m
+[0;1;39m-- Boot e5085dc0d4524d9991a54aa7fede12bf --[0m
+Feb 14 12:34:44 fedora systemd[1]: Starting elasticsearch.service - Elasticsearch...
+Feb 14 12:34:47 fedora systemd-entrypoint[1400]: CompileCommand: dontinline java/lang/invoke/MethodHandle.setAsTypeCache bool dontinline = true
+Feb 14 12:34:47 fedora systemd-entrypoint[1400]: CompileCommand: dontinline java/lang/invoke/MethodHandle.asTypeUncached bool dontinline = true
+Feb 14 12:35:03 fedora systemd[1]: Started elasticsearch.service - Elasticsearch.
+Feb 14 18:02:58 fedora systemd[1]: [0;1;39m[0;1;31m[0;1;39melasticsearch.service: A process of this unit has been killed by the OOM killer.[0m
+Feb 14 18:02:59 fedora systemd[1]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185melasticsearch.service: Failed with result 'oom-kill'.[0m
+Feb 14 18:02:59 fedora systemd[1]: [0;1;39m[0;1;31m[0;1;39melasticsearch.service: Consumed 57min 38.383s CPU time.[0m
+Feb 14 18:15:37 fedora systemd[1]: Starting elasticsearch.service - Elasticsearch...
+Feb 14 18:15:42 fedora systemd-entrypoint[51659]: CompileCommand: dontinline java/lang/invoke/MethodHandle.setAsTypeCache bool dontinline = true
+Feb 14 18:15:42 fedora systemd-entrypoint[51659]: CompileCommand: dontinline java/lang/invoke/MethodHandle.asTypeUncached bool dontinline = true
+Feb 14 18:15:55 fedora systemd[1]: Started elasticsearch.service - Elasticsearch.
+Feb 14 18:28:04 fedora systemd[1]: Stopping elasticsearch.service - Elasticsearch...
+Feb 14 18:28:05 fedora systemd[1]: elasticsearch.service: Deactivated successfully.
+Feb 14 18:28:05 fedora systemd[1]: Stopped elasticsearch.service - Elasticsearch.
+Feb 14 18:28:05 fedora systemd[1]: elasticsearch.service: Consumed 6min 47.036s CPU time.
+[0;1;39m-- Boot 66b5a4a5720c4197893daf58c56269e0 --[0m
+Feb 14 18:28:53 fedora systemd[1]: Starting elasticsearch.service - Elasticsearch...
+Feb 14 18:28:56 fedora systemd-entrypoint[1402]: CompileCommand: dontinline java/lang/invoke/MethodHandle.setAsTypeCache bool dontinline = true
+Feb 14 18:28:56 fedora systemd-entrypoint[1402]: CompileCommand: dontinline java/lang/invoke/MethodHandle.asTypeUncached bool dontinline = true
+Feb 14 18:29:09 fedora systemd[1]: Started elasticsearch.service - Elasticsearch.
+Feb 15 07:43:40 fedora systemd[1]: Stopping elasticsearch.service - Elasticsearch...
+Feb 15 07:43:41 fedora systemd[1]: elasticsearch.service: Deactivated successfully.
+Feb 15 07:43:41 fedora systemd[1]: Stopped elasticsearch.service - Elasticsearch.
+Feb 15 07:43:41 fedora systemd[1]: [0;1;39m[0;1;31m[0;1;39melasticsearch.service: Consumed 28min 30.201s CPU time.[0m
+[0;1;39m-- Boot 48ed5d3a90c54f9fa853ac258de7574e --[0m
+Feb 15 07:44:50 fedora systemd[1]: Starting elasticsearch.service - Elasticsearch...
+Feb 15 07:44:53 fedora systemd-entrypoint[1408]: CompileCommand: dontinline java/lang/invoke/MethodHandle.setAsTypeCache bool dontinline = true
+Feb 15 07:44:53 fedora systemd-entrypoint[1408]: CompileCommand: dontinline java/lang/invoke/MethodHandle.asTypeUncached bool dontinline = true
+Feb 15 07:45:08 fedora systemd[1]: Started elasticsearch.service - Elasticsearch.
+Feb 15 07:51:28 fedora systemd[1]: Stopping elasticsearch.service - Elasticsearch...
+Feb 15 07:51:29 fedora systemd[1]: elasticsearch.service: Deactivated successfully.
+Feb 15 07:51:29 fedora systemd[1]: Stopped elasticsearch.service - Elasticsearch.
+Feb 15 07:51:29 fedora systemd[1]: elasticsearch.service: Consumed 1min 2.517s CPU time.
+[0;1;39m-- Boot 5a4b178bf8b947b394f08932a5164cdc --[0m
+Mar 10 14:48:54 fedora systemd[1]: Starting elasticsearch.service - Elasticsearch...
+Mar 10 14:48:55 fedora systemd-entrypoint[10945]: Exception in thread "main" java.lang.IllegalStateException: The Elasticsearch keystore [/etc/elasticsearch/elasticsearch.keystore] format is too new. Are you trying to downgrade? You should delete and recreate it in order to downgrade.
+Mar 10 14:48:55 fedora systemd-entrypoint[10945]:         at org.elasticsearch.common.settings.KeyStoreWrapper.load(KeyStoreWrapper.java:225)
+Mar 10 14:48:55 fedora systemd-entrypoint[10945]:         at org.elasticsearch.common.settings.HasPasswordKeyStoreCommand.execute(HasPasswordKeyStoreCommand.java:33)
+Mar 10 14:48:55 fedora systemd-entrypoint[10945]:         at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:77)
+Mar 10 14:48:55 fedora systemd-entrypoint[10945]:         at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:112)
+Mar 10 14:48:55 fedora systemd-entrypoint[10945]:         at org.elasticsearch.cli.MultiCommand.execute(MultiCommand.java:95)
+Mar 10 14:48:55 fedora systemd-entrypoint[10945]:         at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:112)
+Mar 10 14:48:55 fedora systemd-entrypoint[10945]:         at org.elasticsearch.cli.Command.main(Command.java:77)
+Mar 10 14:48:55 fedora systemd-entrypoint[10945]:         at org.elasticsearch.common.settings.KeyStoreCli.main(KeyStoreCli.java:33)
+Mar 10 14:48:55 fedora systemd-entrypoint[10945]: Caused by: org.apache.lucene.index.IndexFormatTooNewException: Format version is not supported (resource BufferedChecksumIndexInput(NIOFSIndexInput(path="/etc/elasticsearch/elasticsearch.keystore"))): 6 (needs to be between 1 and 4)
+Mar 10 14:48:55 fedora systemd-entrypoint[10945]:         at org.apache.lucene.codecs.CodecUtil.checkHeaderNoMagic(CodecUtil.java:216)
+Mar 10 14:48:55 fedora systemd-entrypoint[10945]:         at org.apache.lucene.codecs.CodecUtil.checkHeader(CodecUtil.java:198)
+Mar 10 14:48:55 fedora systemd-entrypoint[10945]:         at org.elasticsearch.common.settings.KeyStoreWrapper.load(KeyStoreWrapper.java:215)
+Mar 10 14:48:55 fedora systemd-entrypoint[10945]:         ... 7 more
+Mar 10 14:48:57 fedora systemd-entrypoint[10878]: Exception in thread "main" java.lang.IllegalStateException: The Elasticsearch keystore [/etc/elasticsearch/elasticsearch.keystore] format is too new. Are you trying to downgrade? You should delete and recreate it in order to downgrade.
+Mar 10 14:48:57 fedora systemd-entrypoint[10878]: Likely root cause: org.apache.lucene.index.IndexFormatTooNewException: Format version is not supported (resource BufferedChecksumIndexInput(NIOFSIndexInput(path="/etc/elasticsearch/elasticsearch.keystore"))): 6 (needs to be between 1 and 4)
+Mar 10 14:48:57 fedora systemd-entrypoint[10878]:         at org.apache.lucene.codecs.CodecUtil.checkHeaderNoMagic(CodecUtil.java:216)
+Mar 10 14:48:57 fedora systemd-entrypoint[10878]:         at org.apache.lucene.codecs.CodecUtil.checkHeader(CodecUtil.java:198)
+Mar 10 14:48:57 fedora systemd-entrypoint[10878]:         at org.elasticsearch.common.settings.KeyStoreWrapper.load(KeyStoreWrapper.java:215)
+Mar 10 14:48:57 fedora systemd-entrypoint[10878]:         at org.elasticsearch.bootstrap.Bootstrap.loadSecureSettings(Bootstrap.java:253)
+Mar 10 14:48:57 fedora systemd-entrypoint[10878]:         at org.elasticsearch.bootstrap.Bootstrap.loadSecureSettings(Bootstrap.java:247)
+Mar 10 14:48:57 fedora systemd-entrypoint[10878]:         at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:364)
+Mar 10 14:48:57 fedora systemd-entrypoint[10878]:         at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:169)
+Mar 10 14:48:57 fedora systemd-entrypoint[10878]:         at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:160)
+Mar 10 14:48:57 fedora systemd-entrypoint[10878]:         at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:77)
+Mar 10 14:48:57 fedora systemd-entrypoint[10878]:         at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:112)
+Mar 10 14:48:57 fedora systemd-entrypoint[10878]:         at org.elasticsearch.cli.Command.main(Command.java:77)
+Mar 10 14:48:57 fedora systemd-entrypoint[10878]:         at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:125)
+Mar 10 14:48:57 fedora systemd-entrypoint[10878]:         at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:80)
+Mar 10 14:48:57 fedora systemd[1]: [0;1;39m[0;1;31m[0;1;39melasticsearch.service: Main process exited, code=exited, status=1/FAILURE[0m
+Mar 10 14:48:57 fedora systemd[1]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185melasticsearch.service: Failed with result 'exit-code'.[0m
+Mar 10 14:48:57 fedora systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start elasticsearch.service - Elasticsearch.[0m
+Mar 10 14:48:57 fedora systemd[1]: [0;1;39m[0;1;31m[0;1;39melasticsearch.service: Consumed 9.564s CPU time, 7.9G memory peak.[0m
